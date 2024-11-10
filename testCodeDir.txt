@@ -1,0 +1,34 @@
+
+operatingSystem/
+    ├─ server1/
+    │   ├─ idListOraclePaaS.yml     # id一覧(infra標準(static))
+    │   ├─ idList.yml               # id一覧(アプリチーム固有)
+    │   ├─ root/
+    │   │    └─ id-config.yml       # id単位の設計
+    │   ├─ login/
+    │   │    └─ id-config.yml       # id単位の設計
+    │   ├─ sshd_config              # id共通の設計(実機の設定ファイルを直置き想定)
+    │   └─ sudoers                  # id共通の設計(実機の設定ファイルを直置き想定)
+    └─ servier2/
+
+oracle/
+    ├─ instance1/
+    └─ instance2/
+
+others/
+    └─ notPaasMw/
+
+
+
+idListと実機の突合せ　                      # 設計と実機の差異、特に設計になく・実機にあるIDを検出する
+id-config.ymlを元にテスト実行               # 各idの設定の妥当性チェック
+id共通の設計と実機のconfigファイルのdiff    # 共通設定の妥当性チェック  
+
+
+┣ ┠ ┝ ├
+┫ ┨ ┥ ┤ 
+│ ┃
+─ ━
+┌ ┏ ┓ ┐
+└ ┗ ┛ ┘
+
